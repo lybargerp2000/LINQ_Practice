@@ -10,13 +10,16 @@ namespace LINQ_Problems
     {
         static void Main(string[] args)
         {
-            WordLibrary wordLibrary = new WordLibrary();
-            List<Word> words = wordLibrary.GetWords();
-            List<Word> wordsWithTH = words.Contains("th");
+            List<string> words = new List<string> { "the", "bike", "this", "it", "tenth", "mathematics" };
+            //WordLibrary wordLibrary = new WordLibrary();
+            //List<Word> words = wordLibrary.GetWords();
+            List<string> wordsWithTH = words.Where(s => s.Contains("th")).ToList();
             foreach (var word in wordsWithTH)
             {
-                Console.WriteLine(word.word);
+                Console.WriteLine(word);
+              
             }
+            Console.ReadLine();
         }
     }
 }
