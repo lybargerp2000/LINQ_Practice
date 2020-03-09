@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LINQ_Problems
 {
-    class Word
+    public class Word
     {
         public string word;
     }
