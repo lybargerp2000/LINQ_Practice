@@ -33,12 +33,13 @@ namespace LINQ_Problems
              "73,88,83,99,64",
              "98,100,66,74,55"};
 
-            var result3 = classGrades.Select(element=> element.);
+
+            var result3 = classGrades.Where(s => s.)
 
 
             foreach (var value in result3)
             {
-                Console.WriteLine(value);
+                
 
             }
             Console.ReadLine();
